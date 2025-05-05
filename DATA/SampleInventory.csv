@@ -1,0 +1,20 @@
+﻿orig.ident,Phenotype,Patient ID,Disease status,B27Status,BioSpecimen,Technology
+HC546 PBMC,NoSignature,HC546,Healthy,B27Positive,PBMC,sc(RNA+TCR)seq
+HC1564 PBMC,NoSignature,HC1564,Healthy,B27Positive,PBMC,sc(RNA+TCR)seq
+HC1660 PBMC,NoSignature,HC1660,Healthy,B27Positive,PBMC,sc(RNA+TCR)seq
+HC1788 PBMC,NoSignature,HC1788,Healthy,B27Positive,PBMC,sc(RNA+TCR)seq
+ReA63 PBMC,NoSignature,ReA63,ReA,B27Positive,PBMC,sc(RNA+TCR)seq
+ReASF63 SFMC,NoSignature,ReA63,ReA,B27Positive,SFMC,sc(RNA+TCR)seq
+PB74 PBMC,NoSignature,axSpA74,axSpA,B27Positive,PBMC,sc(RNA+TCR)seq
+PB76 PBMC,NoSignature,axSpA76,axSpA,B27Negative,PBMC,sc(RNA+TCR)seq
+PB81 PBMC,NoSignature,axSpA81,axSpA,B27Positive,PBMC,sc(RNA+TCR)seq
+PB73-4 PBMC,NoSignature,axSpA73-4,axSpA,B27Positive,PBMC,sc(RNA+TCR)seq
+INEX73-4 SFMC,CD8CD103CD49a,axSpA73-4,axSpA,B27Positive,SFMC,sc(RNA+TCR)seq
+INEX81 SFMC,CD8CD103CD49a,axSpA81,axSpA,B27Positive,SFMC,sc(RNA+TCR)seq
+SF73-4 SFMC,NoSignature,axSpA73-4,axSpA,B27Positive,SFMC,sc(RNA+TCR)seq
+SF74 SFMC,NoSignature,axSpA74,axSpA,B27Positive,SFMC,sc(RNA+TCR)seq
+SF76 SFMC,NoSignature,axSpA76,axSpA,B27Negative,SFMC,sc(RNA+TCR)seq
+SF81 SFMC,NoSignature,axSpA81,axSpA,B27Positive,SFMC,sc(RNA+TCR)seq
+AST-TWH-2160,NoSignature,AST-TWH-2160,AS,B27Positive,PBMC,CapTCR-seq
+AST-TWH-2309,NoSignature,AST-TWH-2309,non-radiographic axSpA,B27Negative,PBMC,CapTCR-seq
+AST-TWH-2309W,NoSignature,AST-TWH-2309W,non-radiographic axSpA,B27Negative,PBMC,CapTCR-seq
