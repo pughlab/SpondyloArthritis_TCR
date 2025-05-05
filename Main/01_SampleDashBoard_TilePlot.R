@@ -1,7 +1,7 @@
 library(tidyverse)
-library(ggalign)
+
 ### Input data preparation ----------------------------------------------------------------------------------------
-data_path <- "https://raw.githubusercontent.com/pughlab/SpondyloArthritis_TCR/refs/heads/main/Data"
+data_path <- "https://raw.githubusercontent.com/pughlab/SpondyloArthritis_TCR/refs/heads/main/DATA"
 Inventory_fname <- "01_SampleInventory.csv"
 InventoryData <- read_csv(file.path(data_path , Inventory_fname)) 
 
@@ -10,12 +10,12 @@ InventoryData <- read_csv(file.path(data_path , Inventory_fname))
 ggsave(file.path("/Users/shirin/Desktop/Immunarch/downsamplign/Projetcs/AS/Inventory" ,
                  "AS_SampleInventory.svg") ,
        device = "svg" ,
-       width = 7000 ,
+       width = 7500 ,
        height = 3000 ,
        units = "px" ,
        dpi = 1000)
 ggplot(data = InventoryData %>%
-               mutate(`Disease status` = fct_relevel(`Disease status` , "axSpA" , "ReA" , "Healthy"))) +
+               mutate(`Disease status` = fct_relevel(`Disease status` , "AS" , "non-radiographic axSpA" , "axSpA" , "ReA" , "Healthy"))) +
         geom_tile(
                 aes(
                         x = `Patient ID` ,
@@ -30,8 +30,8 @@ ggplot(data = InventoryData %>%
                           values = c("#EEC8C8" , "#860309")) + 
         
         ggh4x::facet_nested(. ~ Technology + `Disease status`,
-                   scales = "free" ,
-                   space = "free" ) +
+                            scales = "free" ,
+                            space = "free" ) +
         theme_light() +
         theme(
                 panel.grid = element_blank() ,
@@ -47,6 +47,7 @@ ggplot(data = InventoryData %>%
                 
                 strip.text.x = element_text(size = 9 , color = "#000000") ,
                 strip.text.y = element_text(size = 9 , color = "#000000" , angle = 0) ,
+                strip.background = element_rect(fill = "transparent" , linewidth = 0.1 , color = "#000000") ,
                 
                 legend.position = "bottom" ,
                 legend.text = element_text(size = 9 , color = "#000000") ,
